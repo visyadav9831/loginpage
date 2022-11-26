@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Alumni Sans Inline One";
+}
+
+@font-face {
+    font-family: 'Alumni Sans Inline One', cursive;
+    font-family: 'Noto Serif', serif;
+    src: url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Noto+Serif&display=swap');
+}
+
+.page{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.cover{
+    background-color: white;
+    width: 30em;
+    height: 35em;
+    position: relative;
+    border-radius: 1em;
+    box-shadow: 0 0.188em 1.550em rgb(156,156,156);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

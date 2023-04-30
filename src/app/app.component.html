@@ -11,7 +11,7 @@ expressions. Angular interpolation allows you to bind a component's
 properties or variables to its template, allowing you to dynamically
 render values in the view. -->
 
-<h1> {{getValue()}}</h1>
+<!-- <h1> {{getValue()}}</h1> -->
 <h1> {{2+2}}</h1> <!--Output is 4 (This interpolation is also run as javascript Math) -->
 <h1> 2+2</h1>  <!--output is 2+2 -->
 
@@ -35,8 +35,18 @@ For more information visit Angular CLI Document  -->
 <app-sign-up></app-sign-up>
 
 
-
+<!--
 <h1> Called Function to click this button given below</h1>
 <button (click)="getFunction()">Click me </button>
 <button (click)="getName('name')">Click me for name </button>
 <button (click)="getNumber('numbers')">Click here to get number</button>
+<br/><br/><br/><br/><br/>
+<button (click)="getEvent('Hello')">Click here for call function</button>
+<br/><br/>
+<input type="text" #box (keyup)="getEvent('box.value')" /> -->
+
+
+<input type="text" #box placeholder="Enter your name " id="textInput"/>
+<p>{{" Your name is "+ displayValue}}</p>
+<br/>
+<button (click)="getValue(box.value)"  >Click</button>
